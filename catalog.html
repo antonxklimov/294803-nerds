@@ -2,36 +2,34 @@
 <html lang="ru">
    <head>
       <meta charset="utf-8">
-      <title>HTML Academy: Нёрдс</title>
+      <title>Каталог Нёрдс</title>
    </head>
    <body>
-      <header class="header-all">
-         <div class="header">
-         <div class="container">
-         <div class="logo">
-            <p><a href="http://talequale.ru/nerds/index.html"><img src="http://placehold.it/185x75" width="185"
-               height="75" alt="Нердс"></a>
-            <p>
+     <header class="header">
+        <div class="logo">
+           <p><a href="http://talequale.ru/nerds/index.html"><img src="http://placehold.it/185x75" width="185"
+              height="75" alt="Нердс"></a>
+           <p>
          </div>
-         <nav class="breadcrumbs">
-            <ul>
-               <li>
-                  <a href="#">Студия</a>
-               </li>
-               <li>
-                  <a href="#">Клиенты</a>
-               </li>
-               <li>
-                  <a href="#">Магазин</a>
-               </li>
-               <li>
-                  <a href="#">Контакты</a>
-               </li>
-            </ul>
-         </nav>
-         <div class="bin">
-            <p><a href="#">Корзина</a></p>
-         </div>
+         <nav class="site-menu">
+           <ul>
+              <li>
+                 <a href="#">Студия</a>
+              </li>
+              <li>
+                 <a href="#">Клиенты</a>
+              </li>
+              <li>
+                 <a href="#">Магазин</a>
+              </li>
+              <li>
+                 <a href="#">Контакты</a>
+              </li>
+           </ul>
+        </nav>
+        <div class="cart">
+           <p><a href="#">Корзина</a></p>
+        </div>
          <h1>Добро пожаловать в магазин готовых макетов</h1>
       </header>
       <main class="main-content">
@@ -47,7 +45,7 @@
                   <input class="min-price" type="text" id="min-price" value="0">
                </p>
                <p><label for="max-price">До</label>
-                  <input class="min-price" type="text" id="min-price" value="15000">
+                  <input class="max-price" type="text" id="max-price" value="15000">
                </p>
             </div>
             <div class="grid-style">
@@ -55,10 +53,10 @@
                <p><input type="radio" name="grid-style" id="adaptive" checked>
                   <label for="adaptive">Адаптивная</label>
                </p>
-               <p><input type="radio" name="grid-style" id="adaptive">
+               <p><input type="radio" name="grid-style" id="fixed">
                   <label for="adaptive">Фиксированная</label>
                </p>
-               <p><input type="radio" name="grid-style" id="fixed">
+               <p><input type="radio" name="grid-style" id="rubber">
                   <label for="rubber">Резиновая</label>
                </p>
             </div>
@@ -108,6 +106,7 @@
          <p><img src="http://placehold.it/360x576" width="360" height="576" alt="Mishka"></p>
       </div>
       </div>
+    </div>
     </main>
 <footer>
         <div class="container">
@@ -122,3 +121,5 @@
             </div>
          </div>
 </footer>
+</body>
+</html>
