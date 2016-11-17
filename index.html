@@ -3,10 +3,12 @@
    <head>
       <meta charset="utf-8">
       <title>Главная Нёрдс</title>
+      <link href='http://fonts.googleapis.com/css?family=Roboto:500&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
       <link href="css/normalize.css" rel="stylesheet">
       <link href="css/style.css" rel="stylesheet">
    </head>
    <body>
+     <div class="container">
       <header class="header">
          <div class="logo">
             <p><a href="http://talequale.ru/nerds/index.html"><img src="img/nerds-logo.png" width="160"
@@ -28,10 +30,10 @@
                   <a href="#">Контакты</a>
                </li>
             </ul>
+          <div class="cart">
+               <p><a href="#">Корзина</a></p>
+          </div>
          </nav>
-         <div class="cart">
-            <p><a href="#">Корзина</a></p>
-         </div>
          <div class="banner">
             <div class="slider"></div>
             <div class="slider"></div>
@@ -42,8 +44,10 @@
             <p><a href="#">slide-2</a></p>
             <p><a href="#">slide-3</a></p>
          </nav>
+       </div>
       </header>
-      <main class="main-content">
+      <main class="main-content" clearfix>
+        <div class="container">
          <section class="features">
             <div class="features-item">
                <p><img src="img/illustration-1.png" alt="Приложения"></p>
@@ -83,7 +87,7 @@
                </ul>
             </div>
          </section>
-         <div class="our-stats">
+         <div class="our-stats aside">
             <div class="logo">
                <p><img src="img/nerds-illustration.png" alt="Since 2004" width="360"
                   height="208"> </p>
@@ -106,13 +110,21 @@
             </p>
             <p><a href="#"><img src="img/partner-4.png" alt="Mishka"></a>
             </p>
+          </div>
          </div>
          <div class="map">
-            <img src="http://placehold.it/1000x500" width="1000"
-               height="200" alt="Карта">
+           <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+              <div style='overflow:hidden;height:420px;width:1440px;'>
+                <div id='gmap_canvas' style='height:420px;width:1440px;'></div>
+                <div><small><a href="http://embedgooglemaps.com">embedgooglemaps.com</a></small></div>
+                <div><small><a href="https://onlinepartnersuchekostenlos.de/">finden Sie ihren Partner!</a></small></div>
+                <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+              </div>
+              <script type='text/javascript'>function init_map(){var myOptions = {zoom:17,center:new google.maps.LatLng(59.9387942,30.323083300000008),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(59.9387942,30.323083300000008)});infowindow = new google.maps.InfoWindow({content:'<strong>Nerds</strong><br>большая конюшенная 19/8<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+            </script>
          </div>
       </main>
-      <footer>
+      <footer class="clearfix">
          <div class="container">
             <div class="social">
                <a class="social-vk" href="#">ВКонтакте</a>
