@@ -18,17 +18,19 @@ body {
   text-decoration: none;
   font-size: 16px;
   line-height: 50px;
-  padding: 0 3em;
+  padding: 0 1.5em;
   color: #fff;
   background-color: #fb565a;
+  max-width: 160px;
+  text-align: center;
 }
 
 /* LAYOUT */
 
 .container {
   position: relative;
-  max-width: 1000px;
-  /*outline: 3px dotted pink;*/
+  max-width: 1024px;
+  outline: 3px dotted pink;
   margin-right: auto;
   margin-left: auto;
   padding-left: 20px;
@@ -52,7 +54,7 @@ header {
   position: relative;
   height: 150px;
   box-sizing: border-box;
-  outline: 2px solid crimson;
+  /*outline: 2px solid crimson;*/
 }
 
 .site-menu {
@@ -60,14 +62,21 @@ header {
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
-  /*margin-bottom: 42px;*/
   outline: 2px solid green;
+  font-weight: 500;
 }
 
 header .logo {
   position: absolute;
+  left: 8%;
+  top: 50%;
+  transform: translate(-50%,-50%);
   outline: 2px solid pink;
 
+}
+
+header .logo:hover {
+  opacity: .8;
 }
 
 nav ul {
@@ -75,20 +84,20 @@ nav ul {
   top: auto;
   margin: 0;
   padding: 0;
-  /*margin-left: 250px;*/
-  font-size: 14px;
+  font-size: 16px;
   list-style: none;
   outline: 2px solid red;
 }
 
 nav li {
   display: table-cell;
+  padding-right: 50px;
 }
 
 nav a {
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 30px;
   color: black;
 }
@@ -103,12 +112,19 @@ nav a:active {
 
 .cart {
   position: absolute;
-  right: 0px;
+  left: 96%;
+  top: 50%;
+  transform: translate(-50%,-50%);
   outline: 2px solid blue;
-  /*display: inline-block;*/
-  /*margin: 0;
-  padding: 0;*/
-  /*padding-left: 27px;*/
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  padding-left: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-image: url(../img/cart-icon.png);
+  background-repeat: no-repeat;
+  background-position: center left;
 }
 
 .cart:hover {
@@ -132,7 +148,7 @@ nav a:active {
   background-position: bottom right;
   width: 100%;
   height: 440px;
-  outline: 2px solid firebrick;
+  /*outline: 2px solid firebrick;*/
 }
 
 .slide .info {
@@ -150,6 +166,14 @@ nav a:active {
   position: absolute;
 }
 
+.slide h1 {
+  margin-bottom: 30px;
+}
+
+.slide p {
+  margin-bottom: 40px;
+}
+
 /* FEATURES */
 
 .features {
@@ -158,15 +182,15 @@ nav a:active {
   flex-wrap: nowrap;
   padding: 80px 0;
   border-bottom: 2px solid #eeeeee;
-  outline: 2px solid yellow;
+  /*outline: 2px solid yellow;*/
 }
 
 .features-item {
   margin: 0;
   padding: 0;
   width: 33.333%;
-  outline: 2px solid blue;
-  padding-right: 50px;
+  /*outline: 2px solid blue;*/
+  padding-right: 75px;
 }
 
 img {
@@ -176,26 +200,28 @@ img {
 .features-item img {
   position: relative;
   margin: 0;
-  margin-bottom: 19px;
+  /*margin-bottom: 25px;*/
   max-width: 300px;
 }
 
 .features-name {
   margin: 0;
-  margin-bottom: 28px;
   padding: 0;
   text-transform: uppercase;
   font-size: 18px;
-  line-height: 30px;
+}
+
+.features-item h2 {
+  line-height: 70px;
 }
 
 .features-item p {
+  display: inline-block;
+  /*max-width: 245px;*/
   margin: 0;
-  margin-bottom: 33px;
   padding: 0;
   font-size: 14px;
   line-height: 24px;
-  /*font-weight: 100;*/
 }
 
 .features-item:nth-child(2) a {
@@ -207,6 +233,7 @@ img {
 }
 
 .features .btn {
+  margin-top: 30px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -224,6 +251,8 @@ img {
 .hero {
   float: left;
   width: 60%;
+  padding-top: 65px;
+  padding-bottom: 65px;
 }
 
 .lead b {
@@ -240,6 +269,7 @@ img {
   position: relative;
 }
 
+
 /* STATS */
 
 .our-stats {
@@ -247,8 +277,7 @@ img {
   width: 30%;
   margin: 0;
   padding: 0;
-  /*padding-top: 63px;
-  padding-bottom: 71px;*/
+  padding-top: 40px;
 }
 
 .logo-2 {
@@ -273,14 +302,14 @@ img {
 
 .we-are-list ul {
   list-style: none;
+  padding: 0;
 }
 
-.we-are-list ul: before {
-  content: "";
-  position: absolute;
-  margin-top: -1px;
-  width: 25px;
-  border-bottom: 2px solid #fb565a;
+.we-are-list li {
+  padding-left: 36px;
+  background-image: url(../img/line.png);
+  background-repeat: no-repeat;
+  background-position: center left;
 }
 
 /* PARTNERS */
@@ -337,7 +366,7 @@ footer {
 /* SOCIAL */
 
 .social {
-  /*float: left;*/
+  float: left;
   text-align: center;
   font-size: 0;
   outline: 2px solid red;
@@ -380,12 +409,21 @@ footer {
   height: 78px;
   border-radius: 50%;
   background-color: #e1e1e1;
-  background-image: url(../img/inst-icon.png);
+  background-image: url(../img/insta-icon.png);
   background-repeat: no-repeat;
   background-position: center center;
 }
 
+.social-warning {
+  float: right;
+  /*position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);*/
+}
+
 .social-warning p {
+  position: relative;
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -398,4 +436,7 @@ footer {
   font-size: 36px;
   line-height: 36px;
   letter-spacing: .5px;
+  font-weight: bold;
+;
+
 }
