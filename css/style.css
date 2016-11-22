@@ -176,11 +176,37 @@ nav a:active {
   /*outline: 2px solid firebrick;*/
 }
 
+/*.slide .expensive {
+  animation: FadeOut  5s infinite;
+  animation-delay: 15s;
+}
+
+.slide .math {
+  animation: FadeOut  5s infinite;
+  animation-delay: 10s;
+}
+
+.slide .night {
+  animation: FadeOut  5s infinite;
+}
+
+@keyframes FadeOut {
+    from {
+        display: block;
+        opacity: 1;
+    }
+
+    to {
+        display: none;
+        opacity: 0;
+    }
+}*/
+
 .slide .info {
   position: absolute;
   top: 50%;
   transform: translate(0,-50%);
-  width: 35%;
+  width: 30%;
 }
 
 .stage {
