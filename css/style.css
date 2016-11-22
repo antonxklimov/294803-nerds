@@ -479,15 +479,19 @@ img {
   background-color: #eeeeee;
 }
 
-/*.block {
+
+.block {
   position: absolute;
-  width: 319px;
-  height: 308px;
+  top: -135px;
+  left: 420px;
+  transform: translate(-50%,50%);
+  width: 150px;
+  height: 150px;
   background-color: #ffffff;
   z-index: 1000;
-  outline: 2px solid red;
+  /*outline: 2px solid red;*/
   text-align: left;
-  padding: 50px;
+  padding: 100px;
 }
 
 .contacts {
@@ -508,8 +512,7 @@ img {
 
 .contacts p {
   font-size: 16px;
-}*/
-
+}
 
 /* FOOTER */
 
